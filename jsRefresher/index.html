@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    "use strict";
+    let num = 45;
+    // num = 56; //it will run if we are not using "use strict" if we are using "use strict" then it will return as undefined
+    const fun = () => {
+        console.log('The number is ', num);
+        console.log(this); //it will work in arrow function
+        // console.log('The number is ', this); //it will not work inside a function which using function name () { block of codes... }
+    }
+    fun();
+    // console.log(this); //it will returns window objects
+</script>
+</html>
